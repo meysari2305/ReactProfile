@@ -36,3 +36,81 @@
     transform: rotate(360deg);
   }
 }
+:root {
+  --primary-white: #fff;
+  --primary-orange: rgb(14, 17, 156);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
+}
+
+body {
+  font-family: 'Roboto Condesed' sans-serif;
+}
+
+/*********************navbar*********************/
+.logo {
+  width: 10rem;
+}
+/************MENU LINK*******************/
+nav a.nav-link {
+  font-size: 0.8rem;
+  letter-spacing: 0.037rem;
+  cursor: pointer;
+}
+nav ul li {
+  text-transform: uppercase;
+}
+.navbar-nav > li > a {
+  color: var(--primary-white) !important;
+}
+/***************** HEADER **************/
+
+.header-wraper {
+  position: relative;
+  background: rgba(0, 0, 0, 0.7) url(zyro-image.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-blend-mode: darken;
+}
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto Condesed', sans-serif;
+}
+.main-info {
+  color: var(--primary-white);
+  text-transform: uppercase;
+}
+
+/****************HEADER MAIN OFFER BUTTON*******/
+.btn-main-offer {
+  text-transform: uppercase;
+  border: 1px solid var(--primary-red);
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: rgb(41, 11, 11);
+  margin: 2rem;
+  background-color: #61dafb;
+}
+/**************FOOTER**************/
+.footer {
+  width: 100%;
+  padding: 6rem 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.footer-container {
+  max-width: 1140px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: #fff;
+}
