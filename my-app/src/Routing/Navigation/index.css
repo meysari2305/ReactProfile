@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: black;
+  overflow: hidden;
+  padding-bottom: 16px;
+  color: aliceblue;
+}
+.sidebar {
+  padding: 8px 16px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: aliceblue;
+  display: block;
+}
+.sidebar a:hover {
+  color: aliceblue;
+}
+.main {
+  margin-left: 160px;
+  padding: 50px 50px;
+}
+@media screen and (max-height: 450) {
+  .sidebar {
+    padding-top: 15px;
+  }
+}
+.service {
+  display: flex;
+  padding: 3px 3px 3px 3px;
+}
+.client {
+  display: flex;
+}
+.contact {
+  display: flex;
+}
