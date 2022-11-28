@@ -18,7 +18,7 @@ export default class FormElement extends React.Component {
   };
   render() {
     return (
-      <div style={{ margin: '100px auto', border: '1px solid gray', padding: '20px' }}>
+      <div style={{ margin: '100px 100px 100px 300px', border: '1px solid gray', padding: '20px' }}>
         <form onSubmit={this.handleSubmit}>
           <label>
             Nama : <input type={'text'} name="nama" onChange={(e) => this.setState({ nama: e.target.value })} />

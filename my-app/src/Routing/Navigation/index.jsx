@@ -11,8 +11,8 @@ const Navigation = () => {
       <Link className="service" to="/service">
         <i className="fa fa-fw fa-wrench"></i>Service
       </Link>
-      <Link className="client" to="/client">
-        <i className="fa fa-fw fa-user"></i>Clients
+      <Link className="client" to="/form">
+        <i className="fa fa-fw fa-user"></i>Form
       </Link>
       <Link className="contact" to="/contact">
         <i className="fa fa-fw fa-envelope"></i>Contacts

@@ -1,13 +1,21 @@
 import React from 'react';
 import Navigation from '../Navigation';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Home from '../Home';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+//import Home from '../Home';
+import FormElement from '../../Form/Pembahasan/FormElement';
+import Component from '../../Component';
+import Footer from '../../components/Footer';
 const Routing = () => {
   return (
     <div>
-      <Router>
+      <BrowserRouter>
         <Navigation />
-      </Router>
+        <Routes>
+          <Route path="home" element={<Component />} />
+          <Route path="form" element={<FormElement />} />
+          <Route path="contact" element={<Footer />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 };
